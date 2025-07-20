@@ -8,4 +8,6 @@ FROM nginx:alpine
 # Expose port 80 (the default port NGINX listens on)
 EXPOSE 80
 
+HEALTHCHECK --interval=5s --timeout=3s --start-period=30s --retries=3 CMD wget -qO- http://localhost:80 || exit 1
+
 # Start NGINX (this is the default behavior, no CMD or ENTRYPOINT needed)
