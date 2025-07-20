@@ -1,1 +1,1 @@
-# coolify-docker-compose-simple-example
+# coolify-docker-compose
