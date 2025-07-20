@@ -3,7 +3,7 @@
 FROM nginx:alpine
 
 # Copy the production HTML files into the default NGINX public directory
-COPY ./web /usr/share/nginx/html
+# COPY ./web /usr/share/nginx/html
 
 # Expose port 80 (the default port NGINX listens on)
 EXPOSE 80
